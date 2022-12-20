@@ -2,6 +2,6 @@ namespace SquareCalculator;
 
 public interface IFigure
 {
-    bool IsValid();
+    void IsValid();
     double GetSquare();
 }

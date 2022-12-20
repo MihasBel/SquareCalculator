@@ -8,9 +8,13 @@ public class Circle: IFigure
     {
         Radius = r;
     }
-    public bool IsValid()
+    public void IsValid()
     {
-        return Radius >0;
+        if (Radius>0)
+        {
+            return;
+        }
+        throw new Exception("Invalid argument to create circle");
     }
 
     public double GetSquare()

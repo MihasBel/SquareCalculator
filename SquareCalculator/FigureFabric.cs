@@ -4,33 +4,28 @@ public static class FigureFabric
 {
     public static IFigure CreateFigure(double radius)
     {
-        var circle = new Circle(radius);
-        if (circle.IsValid())
-        {
-            return circle;
-        }
-        throw new Exception("Invalid argument to create circle");
+        return new Circle(radius);
     }
 
     public static IFigure CreateFigure(List<double> sides)
     {
+        IFigure figure;
         switch (sides.Count)
         {
             case 0:
                 throw new Exception("not a single side is set");
             case 1:
-                return CreateFigure(sides[0]);
+                figure = CreateFigure(sides[0]);
+                break;
             case 2:
                 throw new NotImplementedException();
             case 3:
-                var triangle = new Triangle(sides[0], sides[1], sides[2]);
-                if (triangle.IsValid())
-                {
-                    return triangle;
-                }
-                throw new Exception("Invalid arguments to create triangle");
+                figure = new Triangle(sides[0], sides[1], sides[2]);
+                break;
             default:
                 throw new NotImplementedException();
         }
+        figure.IsValid();
+        return figure;
     }
 }

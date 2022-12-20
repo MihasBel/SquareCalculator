@@ -18,14 +18,13 @@ public class Triangle: IFigure
                   || Math.Round(c * c + b * b,Constants.Accuracy) == Math.Round(a * a,Constants.Accuracy);
     } 
     
-    public bool IsValid()
+    public void IsValid()
     {
         if (A+B > C && A+C > B && C+B > A)
         {
-            return true;
+            return;
         }
-
-        return false;
+        throw new Exception("Invalid arguments to create triangle");
     }
 
     public double GetSquare()
