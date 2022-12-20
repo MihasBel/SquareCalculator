@@ -15,6 +15,6 @@ public class Circle: IFigure
 
     public double GetSquare()
     {
-        return Math.PI * Radius * Radius;
+        return Math.Round(Math.PI * Radius * Radius,Constants.Accuracy);
     }
 }

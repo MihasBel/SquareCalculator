@@ -31,7 +31,7 @@ public class Triangle: IFigure
     public double GetSquare()
     {
         var p = (A + B + C) / 2;
-        return Math.Sqrt(p * (p - A) * (p - B) * (p - C));
+        return Math.Round(Math.Sqrt(p * (p - A) * (p - B) * (p - C)), Constants.Accuracy);
     }
     
 }

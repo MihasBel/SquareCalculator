@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareCalculator", "SquareC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClient", "TestClient\TestClient.csproj", "{46919397-FE8C-4D1D-A1B4-7163BB4BDB27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSquare", "TestSquare\TestSquare.csproj", "{6C59E642-D2C0-4214-9FAA-B7F61A18A8BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{46919397-FE8C-4D1D-A1B4-7163BB4BDB27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46919397-FE8C-4D1D-A1B4-7163BB4BDB27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46919397-FE8C-4D1D-A1B4-7163BB4BDB27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C59E642-D2C0-4214-9FAA-B7F61A18A8BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C59E642-D2C0-4214-9FAA-B7F61A18A8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C59E642-D2C0-4214-9FAA-B7F61A18A8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C59E642-D2C0-4214-9FAA-B7F61A18A8BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
