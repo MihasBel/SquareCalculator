@@ -26,6 +26,6 @@ For use this one requires transformation IFigure to Triangle
 >В базе данных MS SQL Server есть продукты и категории. Одному продукту может соответствовать много категорий, в одной категории может быть много продуктов. Напишите SQL запрос для выбора всех пар «Имя продукта – Имя категории». Если у продукта нет категорий, то его имя все равно должно выводиться.
 
 SELECT products.name, category.name
-FROM products
-INNER JOIN products_to_category ON products.id = products_to_category.products_id
-LEFT JOIN products ON products_to_category.category_id = category.id
+        FROM products
+        LEFT JOIN products_to_category ON products.id = products_to_category.products_id
+        LEFT JOIN products ON products_to_category.category_id = category.id 
